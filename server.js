@@ -31,7 +31,7 @@ app.use(
         secret: process.env.SECRET,
         store: new SequelizeStore({ db: sequelize }),
         resave: false,
-        saveUnitilized: false,
+        saveUninitialized: false,
     })
 );
 
