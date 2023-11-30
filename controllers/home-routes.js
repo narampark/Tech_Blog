@@ -44,7 +44,7 @@ router.get("/dashboard", withAuth, async (req, res) => {
             where: { user_id: req.session.user_id },
             include: [{ model: User, attributes: ["username"] }],
         });
-        const posts = postData.map((post) => post.get({ platain: true }));
+        const posts = postData.map((post) => post.get({ plain: true }));
         res.render("dashboard", {
             posts,
             logged_in: req.session.logged_in,
@@ -71,7 +71,7 @@ router.get("/signup", (req, res) => {
 });
 
 router.get("/newpost", (req, res) => {
-    if(req.session.logged_in) {
+    if (req.session.logged_in) {
         res.render("newpost");
         return;
     }
