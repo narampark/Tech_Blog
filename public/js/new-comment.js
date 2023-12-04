@@ -1,7 +1,7 @@
 const newTechCommentFormHandler = async (event) => {
     event.preventDefault();
 
-    const post_id = parseInt(window.pathname.split("/").pop());
+    const post_id = parseInt(window.location.pathname.split("/").pop());
 
     const content = document.querySelector("#content-new-tech-comment").value.trim();
 

@@ -30,9 +30,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="/">Home</a>
               </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/dashboard">Dashboard</a>
-                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/dashboard">Dashboard</a>
+              </li>
               {{#if logged_in}}
                 <li class="nav-item">
                   <a class="nav-link" href="#" id="tech-logout">Logout</a>
@@ -53,15 +53,18 @@
     <div class="container" style="margin-bottom: 15vh;">
       {{{body}}}
     </div>
-<footer class="bg-dark text-white py-3" style="position: fixed; bottom: 0; width: 100%;">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-6 text-center">
-        <h6>&copy; 2023 All Rights Reserved.</h6>
+    <footer
+      class="bg-dark text-white py-3"
+      style="position: fixed; bottom: 0; width: 100%;"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center">
+            <h6>&copy; 2023 All Rights Reserved.</h6>
+          </div>
+        </div>
       </div>
-    </div> 
-  </div>
-</footer>
+    </footer>
     <script src="/js/delete-post.js"></script>
     <script src="/js/login.js"></script>
     <script src="/js/logout.js"></script>
